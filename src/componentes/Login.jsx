@@ -1,4 +1,4 @@
-// 11MO COMPONENTE : NUESTRA SECCION DE LOGUEO DE SOFA Y CAFE 
+// 11VO COMPONENTE : NUESTRA SECCION DE LOGUEO DE SOFA Y CAFE 
 
 import '../estilos/Login.css'; // Importo los estilos del login
 import { useState } from "react"; //Hook para manejar estados en React
@@ -69,6 +69,7 @@ function Login() {
             placeholder="Contraseña"
           />
         </div>
+         {/* Usamos el renderizado condicional en React para mostrar elementos segun una condicion */}
          {/* Mensaje de error si faltan datos */}
         {campoVacio && (
           <p className="login-error">Todos los campos son obligatorios</p>

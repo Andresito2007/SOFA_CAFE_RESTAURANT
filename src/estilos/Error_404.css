@@ -1,1 +1,18 @@
 
+
+
+.error {
+  text-align: center;
+  margin-top: 100px;
+  background-color: green;
+  
+}
+
+a {
+  color: blue;
+}
+
+.mensaje{
+    color: red;
+    font-size: 200px;
+}

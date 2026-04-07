@@ -22,6 +22,8 @@ import Login from './componentes/Login';
 import Carta_Sofa from './componentes/CartaSofa';
 //NUESTRA SECCION DE LOCALES DE CARTA Y SOFA CUANDO EL CLIENTE SE VA A UBICACIONES
 import Reservacion from './componentes/Ubicaciones'; 
+// NUESTRA SECCION DE ERROR 404 POR SI AL REALIZAR UNA SECCION O PAGINA QUE NO EXITE POR "/" RUTAS
+import Error_404 from "./componentes/Error_404";
 //IMPORTAMOS NUESTRO ESTILOS DE INDEX.CSS
 import './estilos/index.css';
 
@@ -58,6 +60,7 @@ function App() {
         <Route path="/reservacion" element={<Reservacion></Reservacion>} />
         <Route path="/cartasofa" element={<Carta_Sofa></Carta_Sofa>} />
         <Route path="/login" element={<Login></Login>} />
+        <Route path="*" element={<Error_404></Error_404>} />
       </Routes>
     </section>
   );
